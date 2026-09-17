@@ -16,12 +16,11 @@ void draw()
 {
 
 while ( startX <= 9 ){
-endX = startX;
-}
+endX = startX + ((int)(Math.random()*10));
 
-while (startY <= 9){
-endY = startY;
-}
+while (startY <= 9)
+endY = startY +((int)(Math.random()*18) - 9);
+
 
 fill((int)(Math.random()*256),(int)(Math.random()*256));
 line(startX, startY, endX, endY);
@@ -30,12 +29,15 @@ startY = endY;
 
 }
 
+}
+
 void mousePressed()
 {
 endX = startX;
 startX = 0;
+endX = 0;
 
 endY = startY;
 startY = 150;
-
+endY = 150;
 }
