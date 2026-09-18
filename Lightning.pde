@@ -9,7 +9,7 @@ void setup()
 {
   size(300,300);
   strokeWeight(3);
-  background(178,50,50,15);
+  background(178,50,50);
   fill(255,189,5);
   textSize(50);
   text("HARRY",80,200);
